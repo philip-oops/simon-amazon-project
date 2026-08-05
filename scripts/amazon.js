@@ -1,4 +1,4 @@
-let productsHtml = '';
+ let productsHtml = '';
 
 // used accumulator pattern
 products.forEach((product) => {
@@ -58,7 +58,7 @@ products.forEach((product) => {
 
 const jsProductGrid = document.querySelector('.js-products-grid');
 jsProductGrid.innerHTML = productsHtml;
-        
+
 const jsProductAddToCart = document.querySelectorAll('.js-add-to-cart');
 
 jsProductAddToCart.forEach((button) => {
