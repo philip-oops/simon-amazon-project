@@ -1,4 +1,6 @@
- let productsHtml = '';
+import {cart} from '../data/cart.js';
+
+let productsHtml = '';
 
 // used accumulator pattern
 products.forEach((product) => {
