@@ -1,5 +1,5 @@
-class Cart {
-    cartItems = undefined;
+export class Cart {
+    cartItems;
     #localStorageKey;
 
     constructor(localStorageKey) {
@@ -84,8 +84,9 @@ class Cart {
 
 
 const carts = new Cart('cart-oop');
-const businessCart = new Cart('cart-business ');
-
+const businessCart = new Cart('cart-business');
 
 console.log(carts);
 console.log(businessCart);
+
+// private properties nd mwthods

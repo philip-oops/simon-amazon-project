@@ -97,4 +97,3 @@ businessCart.loadFromStorage();
 
 console.log(carts);
 console.log(businessCart);
-
