@@ -103,7 +103,7 @@ console.log(tshirt.getPrice());
 export let products  = [];
 
 export function loadProductsFetch(){
-  const promise =  fetch('Https://supersimplebackend.dev/products').then((response) => {
+  const promise =  fetch('Https://error.supersimplebackend.dev/products').then((response) => {
     return response.json();
   }).then((productsData) => {
      products = productsData.map((productDatails) => {
@@ -114,6 +114,8 @@ export function loadProductsFetch(){
     });
 
     console.log('load product');
+  }).catch((error) => {
+    console.log('unexpected error. please try again later');
   });
 
   return promise
@@ -138,9 +140,15 @@ export function loadProducts(fun) {
     fun();
   })
 
+  xhr.addEventListener('error', (error) => {
+    console.log('unexpected error. please try again later');
+    
+  })
+
   xhr.open('GET', 'Https://supersimplebackend.dev/products');
   xhr.send();
 }
+
 
 
 
