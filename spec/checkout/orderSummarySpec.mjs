@@ -11,7 +11,7 @@ describe('test suite: renderOrderSummary', () => {
             done();
         })
     });
-
+ 
     // Runs BEFORE each test automatically
     beforeEach(() => {
         spyOn(localStorage, 'getItem').and.callFake(() => {
