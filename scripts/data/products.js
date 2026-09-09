@@ -103,7 +103,7 @@ console.log(tshirt.getPrice());
 export let products  = [];
 
 export function loadProductsFetch(){
-  const promise =  fetch('Https://error.supersimplebackend.dev/products').then((response) => {
+  const promise =  fetch('Https://supersimplebackend.dev/products').then((response) => {
     return response.json();
   }).then((productsData) => {
      products = productsData.map((productDatails) => {
